@@ -29,4 +29,4 @@ Este projeto está licenciado sob a Licença MIT.
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão, por favor entre em contato através do email [maiconmoraisfs@gmail.com](maiconmoraisfs@gmail.com) ou visite o nosso site [www.example.com](http://www.example.com/).
+Se você tiver alguma dúvida ou sugestão, por favor entre em contato através do email [maiconmoraisfs@gmail.com](maiconmoraisfs@gmail.com) ou visite meu site https://maiconmorais.netlify.app/#/.
