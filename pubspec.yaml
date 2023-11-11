@@ -1,0 +1,38 @@
+name: target_sistemas_teste
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.5 <4.0.0"
+
+dependencies:
+  flutter_svg: ^0.22.0
+  
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  mobx: ^2.2.1
+  url_launcher: ^6.2.1
+  mobx_codegen: ^2.4.0
+  flutter_mobx: ^2.1.1
+  firebase_auth: ^4.13.0
+  firebase_core: ^2.22.0
+  cloud_firestore: ^4.13.0
+  provider: ^6.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: TargetSistemasTesteIcons
+      fonts:
+        - asset: lib/assets/icons/TargetSistemasTesteIcons.ttf

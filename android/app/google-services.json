@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "825036654229",
+    "project_id": "targetsistemasteste",
+    "storage_bucket": "targetsistemasteste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825036654229:android:0f181f1c1cec0cccadfd9c",
+        "android_client_info": {
+          "package_name": "com.example.target_sistemas_teste"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaMD48gaxO_MnHeMfpIU6cUUX-VONL7t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
