@@ -10,6 +10,7 @@ class CustomInputField extends StatelessWidget {
   final TextEditingController? controller;
   final Function(String)? onChanged;
   final Function(String)? onSubmitted;
+  final BoxDecoration? containerDecoration;
 
   const CustomInputField({
     super.key,
@@ -22,6 +23,7 @@ class CustomInputField extends StatelessWidget {
     this.errorText,
     this.onSubmitted,
     this.controller,
+    this.containerDecoration,
   });
 
   const CustomInputField.user({
@@ -38,6 +40,7 @@ class CustomInputField extends StatelessWidget {
     this.errorText,
     this.onSubmitted,
     this.controller,
+    this.containerDecoration,
   });
 
   const CustomInputField.password({
@@ -54,6 +57,7 @@ class CustomInputField extends StatelessWidget {
     this.errorText,
     this.onSubmitted,
     this.controller,
+    this.containerDecoration,
   });
 
   @override
@@ -70,32 +74,35 @@ class CustomInputField extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 7),
-        TextField(
-          onChanged: onChanged,
-          autofocus: autofocos,
-          obscureText: obscuredText,
-          onSubmitted: onSubmitted,
-          controller: controller,
-          textAlign: hintText != null ? TextAlign.center : TextAlign.start,
-          decoration: InputDecoration(
-            error: Text(
-              errorText ?? '',
-              style: const TextStyle(color: Color(0xFFFF0A00)),
-            ),
-            hintText: hintText,
-            hintStyle: const TextStyle(
-              color: Color(0xFF000000),
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-            ),
-            alignLabelWithHint: true,
-            filled: true,
-            fillColor: const Color(0xFFFFFFFF),
-            border: const OutlineInputBorder(
-              borderRadius: BorderRadius.all(
-                Radius.circular(7),
+        Container(
+          decoration: containerDecoration,
+          child: TextField(
+            onChanged: onChanged,
+            autofocus: autofocos,
+            obscureText: obscuredText,
+            onSubmitted: onSubmitted,
+            controller: controller,
+            textAlign: hintText != null ? TextAlign.center : TextAlign.start,
+            decoration: InputDecoration(
+              error: Text(
+                errorText ?? '',
+                style: const TextStyle(color: Color(0xFFFF0A00)),
               ),
-              borderSide: BorderSide.none,
+              hintText: hintText,
+              hintStyle: const TextStyle(
+                color: Color(0xFF000000),
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+              alignLabelWithHint: true,
+              filled: true,
+              fillColor: const Color(0xFFFFFFFF),
+              border: const OutlineInputBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(7),
+                ),
+                borderSide: BorderSide.none,
+              ),
             ),
           ),
         ),

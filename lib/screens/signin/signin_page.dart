@@ -20,11 +20,25 @@ class SigninPage extends StatelessWidget {
           return CustomInputField.user(
             onChanged: signinStore.setUserName,
             errorText: signinStore.userErrorMessageValidate,
+            containerDecoration: const BoxDecoration(boxShadow: [
+              BoxShadow(
+                color: Color(0x55333333),
+                spreadRadius: 3,
+                blurRadius: 20,
+              ),
+            ]),
           );
         }),
         const SizedBox(height: 20),
         Observer(builder: (context) {
           return CustomInputField.password(
+            containerDecoration: const BoxDecoration(boxShadow: [
+              BoxShadow(
+                color: Color(0x55333333),
+                spreadRadius: 3,
+                blurRadius: 20,
+              ),
+            ]),
             onChanged: signinStore.setPassword,
             errorText: signinStore.passwordErrorMessageValidate,
           );
