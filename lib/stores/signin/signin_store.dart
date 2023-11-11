@@ -54,14 +54,14 @@ abstract class SigninBase with Store {
 
   @computed
   bool get userIsValid {
-    return userName.isNotEmpty && userName.length < 20;
+    return userName.isNotEmpty && userName.length <= 20;
   }
 
   @computed
   bool get passwordIsValid {
     final RegExp specialCharacteChecker = RegExp(r'^[a-z0-9]+$');
-    return password.length > 2 &&
-        password.length < 20 &&
+    return password.length >= 2 &&
+        password.length <= 20 &&
         specialCharacteChecker.hasMatch(password);
   }
 
