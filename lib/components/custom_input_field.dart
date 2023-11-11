@@ -84,6 +84,7 @@ class CustomInputField extends StatelessWidget {
             controller: controller,
             textAlign: hintText != null ? TextAlign.center : TextAlign.start,
             decoration: InputDecoration(
+              prefixIcon: icon,
               error: Text(
                 errorText ?? '',
                 style: const TextStyle(color: Color(0xFFFF0A00)),
